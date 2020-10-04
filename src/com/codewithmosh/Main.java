@@ -31,10 +31,17 @@ public class Main {
         // System.out.println(x);
         // System.out.println(y);
         // System.out.println(z);
+
+        // ----- Contatenando
         
-        int x = 1;
-        x = x + 2;
-        x += 2; // mesma coisa (pode aplicar para todos os outros)
+        // int x = 1;
+        // x = x + 2;
+        // x += 2; // mesma coisa (pode aplicar para todos os outros)
+        // System.out.println(x);
+
+        // ---- Order of Operations
+
+        int x = 10 + 3 * 2;
         System.out.println(x);
         
     }
