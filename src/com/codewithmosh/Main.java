@@ -4,9 +4,38 @@ public class Main {
 
     public static void main(String[] args) {
         String traco = "--------------------------------------------------------------------------------------------------------------------------";
-
         System.out.println(traco);
         
-        System.out.println("Hello World");
+        // -----  Operações Básicas ------
+
+
+        // int result = 10 + 3;
+        // int result = 10 - 3;
+        // int result = 10 * 3;
+        // int result = 10 / 3; // = 3
+        // double result = (double)10 / (double)3; // não pode ser int
+
+        // System.out.println(result);
+
+        // ----- Soma mais 1
+        
+        // int x = 1;
+        // x++;
+        // System.out.println(x);
+
+        // ---- Atribuindo a Variável
+
+        // int x = 1;
+        // int y = x++;
+        // int z = ++x;
+        // System.out.println(x);
+        // System.out.println(y);
+        // System.out.println(z);
+        
+        int x = 1;
+        x = x + 2;
+        x += 2; // mesma coisa (pode aplicar para todos os outros)
+        System.out.println(x);
+        
     }
 }
