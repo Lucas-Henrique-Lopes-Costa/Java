@@ -46,9 +46,5 @@ public class Main {
         System.out.println("Para quitar o empréstimo de R$" + valorEmprestado + " em " +  duraçãoMeses / 12 + " anos a uma taxa de juros anual de " + taxaJurosAnuais + "%, o seu pagamento mensal seria de " + resultMoneyString);
 
         // System.out.print("Juros anuais: ");
-
-
-
-
     }
 }
