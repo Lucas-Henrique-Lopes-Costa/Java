@@ -1,5 +1,6 @@
 package com.codewithmosh;
 
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Main {
@@ -22,7 +23,8 @@ public class Main {
 
         System.out.print("Qual a taxa de juros ANUAIS: ");
         // Scanner scannerI = new Scanner(System.in);
-        float taxaJuros = scanner.nextFloat() / 100 / 12; // deve-se inserir com ","
+        float taxaJurosAnuais = scanner.nextFloat(); // deve-se inserir com ","
+        float taxaJuros = taxaJurosAnuais / 100 / 12;
         
         // O número que vai receber será em porcentagem => dempois tranforma ele em DECIMAL => divide por 12 para ter os juros MENSAIS
 
@@ -37,10 +39,11 @@ public class Main {
 
         // M = P [ i(1 + i)^n ] / [ (1 + i)^n – 1]
 
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
         
+        String resultMoneyString = currency.format(mortgage);
 
-        System.out.println(mortgage);
-
+        System.out.println("Para quitar o empréstimo de R$" + valorEmprestado + " em " +  duraçãoMeses + " anos a uma taxa de juros anual de " + taxaJurosAnuais + "%, o seu pagamento mensal seria de " + resultMoneyString);
 
         // System.out.print("Juros anuais: ");
 
