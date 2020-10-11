@@ -34,7 +34,7 @@ public class Main {
         // int result5 = (int) Math.random() * 100; // Número Aleatório
         // System.out.println(result5); 
 
-        int result5 = (int) (Math.random() * 100); // Número Aleatório
+        int result5 = (int) (Math.random() * 100); // Número Aleatório | precisa de multiplicar por 100 porque o resultado é um número tipo float
         System.out.println(result5);
 
     }
