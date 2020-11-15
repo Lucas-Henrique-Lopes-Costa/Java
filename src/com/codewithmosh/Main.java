@@ -9,12 +9,6 @@ public class Main {
         String traco = "--------------------------------------------------------------------------------------------------------------------------";
         System.out.println(traco);
 
-        // valor emprestado = P        
-        // taxa de juros = i
-        // duração em meses = n
-
-        // pagamento mensal = M
-
         Scanner scanner = new Scanner(System.in); // isso serve para todas as variáveis
 
         System.out.print("Valor do empréstimo: ");
@@ -23,10 +17,10 @@ public class Main {
 
         System.out.print("Qual a taxa de juros ANUAIS: ");
         // Scanner scannerI = new Scanner(System.in);
-        float taxaJurosAnuais = scanner.nextFloat(); // deve-se inserir com ","
+        float taxaJurosAnuais = scanner.nextFloat(); // deve-se inserir com "," (float)
         float taxaJuros = taxaJurosAnuais / 100 / 12;
         
-        // O número que vai receber será em porcentagem => dempois tranforma ele em DECIMAL => divide por 12 para ter os juros MENSAIS
+        // O número que vai receber será em porcentagem => depois tranforma ele em DECIMAL => divide por 12 para ter os juros MENSAIS
 
         System.out.print("Número de anos: ");
         // Scanner scannerN = new Scanner(System.in);
@@ -38,6 +32,12 @@ public class Main {
             / ( Math.pow(1 + taxaJuros, duraçãoMeses) -1 );
 
         // M = P [ i(1 + i)^n ] / [ (1 + i)^n – 1]
+
+            // valor emprestado = P        
+            // taxa de juros = i
+            // duração em meses = n
+
+            // pagamento mensal = M
 
         NumberFormat currency = NumberFormat.getCurrencyInstance();
         
