@@ -15,7 +15,7 @@ public class Main {
         // Scanner scannerP = new Scanner(System.in);
         int valorEmprestado = scanner.nextInt();
 
-        System.out.print("Qual a taxa de juros ANUAIS: ");
+        System.out.print("Qual a taxa de juros ANUAIS (%): ");
         // Scanner scannerI = new Scanner(System.in);
         float taxaJurosAnuais = scanner.nextFloat(); // deve-se inserir com "," (float)
         float taxaJuros = taxaJurosAnuais / 100 / 12;
