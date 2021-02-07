@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        String traco = "--------------------------------------------------------------------------------------------------------------------------";
+        String traco = "#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Bem-Vindo a Calculadora de Hipoteca #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#";
         System.out.println(traco);
 
         Scanner scanner = new Scanner(System.in); // isso serve para todas as variáveis
@@ -43,7 +43,9 @@ public class Main {
         
         String resultMoneyString = currency.format(mortgage);
 
-        System.out.println("Para quitar o empréstimo de R$" + valorEmprestado + " em " +  duraçãoMeses / 12 + " anos a uma taxa de juros anual de " + taxaJurosAnuais + "%, o seu pagamento mensal seria de " + resultMoneyString);
+        String valorEmprestadoBR = currency.format(valorEmprestado);
+
+        System.out.println("Para quitar o empréstimo de " + valorEmprestadoBR + " em " +  duraçãoMeses / 12 + " anos a uma taxa de juros anual de " + taxaJurosAnuais + "%, o seu pagamento mensal seria de " + resultMoneyString);
 
         // System.out.print("Juros anuais: ");
     }
